@@ -17,5 +17,5 @@ COPY . .
 # Port expose par defaut par Google Cloud Run
 EXPOSE 8080
 
-# Commande de lancement de l'interface ADK Web pour Cloud Run
-CMD ["adk", "web", "app", "--host", "0.0.0.0", "--port", "8080"]
+# Commande mise à jour pour supporter les sessions et autoriser l'hôte
+CMD ["adk", "web", "app", "--host", "0.0.0.0", "--port", "8080", "--allow-origins", "*"]
