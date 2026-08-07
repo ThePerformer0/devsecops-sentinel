@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 8080
 
 # Commande mise à jour pour supporter les sessions et autoriser l'hôte
-CMD ["adk", "web", "app", "--host", "0.0.0.0", "--port", "8080", "--allow-origins", "*"]
+CMD ["adk", "web", "app", "--host", "0.0.0.0", "--port", "8080", "--allow_origins", "*"]
